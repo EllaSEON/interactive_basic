@@ -83,3 +83,17 @@ body {
   color: #bbb;
   margin-bottom: 30px;
 }
+
+/* a태그는 inline 요소인데 너비랑 높이를 설정해야하니 block으로 변환 */
+.wrap .profile .btnView {
+  display: block;
+  width: 180px;
+  height: 32px;
+  margin: 0px auto 20px;
+  background: linear-gradient(45deg, aqua, #77d9ff);
+  box-shadow: 5px 10px 20px rgba(0, 255, 255, 0.4);
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+  font: bold 12px/32px "arial";
+  color: #fff;
+  border-radius: 16px;
+}
