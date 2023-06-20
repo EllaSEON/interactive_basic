@@ -35,3 +35,51 @@ body {
   border-radius: 10px;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
 }
+
+/*nav태그는 시맨틱태그임. block 요소의 특징은 너비값을 지정하지 않아도 부모요소의 100%만큼 자동 설정이 됨. padding을 제외한 나머지 크기만큼 width값이 자동으로 설정되어있음*/
+/* .wrap .menu {
+  border: 1px solid red;
+} */
+
+/* float을 사용할 경우 부모요소가 높이값을 못잡아서 가상요소로 설정해서 부모요소가 자식요소 감쌀수있게함 */
+.wrap .menu::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.wrap .menu a {
+  font-size: 20px;
+  color: #666;
+}
+.wrap .menu a:nth-of-type(1) {
+  float: left;
+}
+.wrap .menu a:nth-of-type(2) {
+  float: right;
+}
+
+.wrap .profile {
+  width: 100%;
+  text-align: center;
+}
+
+.wrap .profile img {
+  width: 200px;
+  /* 너비값을 지정하면 height값을 지정안했을 때 자동으로 auto값이 들어온다. 해당 이미지 비율에 맞게 자동으로 설정해줌  */
+  /* height: auto; */
+  border-radius: 50%;
+  box-shadow: 5px 15px 30px rgb(138, 222, 255, 0.8);
+  margin-bottom: 20px;
+}
+
+.wrap .profile h1 {
+  font: bold 22px/1 "arial";
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.wrap .profile p {
+  font: 12px/1 "arial";
+  color: #bbb;
+  margin-bottom: 30px;
+}
