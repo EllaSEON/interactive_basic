@@ -15,10 +15,6 @@ a {
   text-decoration: none;
 }
 
-body {
-  background: lightcyan;
-}
-
 .wrap {
   /* 모바일 크기는 340px이 정석 */
   width: 340px;
@@ -68,7 +64,6 @@ body {
   /* 너비값을 지정하면 height값을 지정안했을 때 자동으로 auto값이 들어온다. 해당 이미지 비율에 맞게 자동으로 설정해줌  */
   /* height: auto; */
   border-radius: 50%;
-  box-shadow: 5px 15px 30px rgb(138, 222, 255, 0.8);
   margin-bottom: 20px;
 }
 
@@ -90,8 +85,6 @@ body {
   width: 180px;
   height: 32px;
   margin: 0px auto 20px;
-  background: linear-gradient(45deg, aqua, #77d9ff);
-  box-shadow: 5px 10px 20px rgba(0, 255, 255, 0.4);
   text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
   font: bold 12px/32px "arial";
   color: #fff;
@@ -161,4 +154,43 @@ body {
 .wrap .others a:nth-of-type(4) {
   background: #e22be2;
   box-shadow: 5px 5px 10px rgb(226, 43, 226, 0.5);
+}
+
+/* member 1 custom */
+.member1 {
+  background: lightcyan;
+}
+.member1 .wrap .profile img {
+  box-shadow: 5px 15px 30px rgb(138, 222, 255, 0.8);
+}
+
+.member1 .wrap .profile .btnView {
+  background: linear-gradient(45deg, aqua, #77d9ff);
+  box-shadow: 5px 10px 20px rgba(0, 255, 255, 0.4);
+}
+
+/* member 2 custom */
+.member2 {
+  background: rgb(62, 213, 191);
+}
+.member2 .wrap .profile img {
+  box-shadow: 5px 15px 30px rgb(62, 213, 191, 0.8);
+}
+
+.member2 .wrap .profile .btnView {
+  background: linear-gradient(45deg, rgb(12, 137, 137), #46e35e);
+  box-shadow: 5px 10px 20px rgba(62, 213, 191, 0.4);
+}
+
+/* member 3 custom */
+.member3 {
+  background: rgb(234, 134, 209);
+}
+.member3 .wrap .profile img {
+  box-shadow: 5px 15px 30px rgb(234, 134, 209, 0.8);
+}
+
+.member3 .wrap .profile .btnView {
+  background: linear-gradient(45deg, rgb(221, 108, 180), #ea86d1cc);
+  box-shadow: 5px 10px 20px rgba(234, 134, 209, 0.4);
 }
