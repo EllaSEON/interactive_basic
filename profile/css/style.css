@@ -97,3 +97,68 @@ body {
   color: #fff;
   border-radius: 16px;
 }
+
+.wrap .contact {
+  margin-bottom: 25px;
+}
+
+.wrap .contact li {
+  width: 100%;
+  padding: 10px 25px 5px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.wrap .contact li:last-child {
+  border-bottom: none;
+}
+.wrap .contact li i {
+  width: 20%;
+  color: #555;
+  font-size: 15px;
+  text-shadow: 2px 2px 2px #ddd;
+}
+
+.wrap .contact li span {
+  font: 11px/1 "orbitron";
+  color: #555;
+  letter-spacing: 1px;
+}
+
+.wrap .others {
+  text-align: center;
+  font-size: 0px;
+  margin-bottom: 20px;
+}
+
+.wrap .others a {
+  /* a태그는 inline 요소인데 우리가 크기 지정하려면 블록요소로 가야하는데 블록요소는 한줄씩 다 차지하니까 inline-block으로 */
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: gray;
+  border-radius: 50%;
+  margin: 0px 10px;
+  opacity: 0.3;
+}
+
+.wrap .others a.on {
+  opacity: 1;
+}
+
+.wrap .others a:nth-of-type(1) {
+  background: #49e4e4;
+  box-shadow: 5px 5px 10px rgb(178, 235, 235, 0.5);
+}
+.wrap .others a:nth-of-type(2) {
+  background: #9beb9b;
+  box-shadow: 5px 5px 10px rgb(155, 235, 155, 0.5);
+}
+.wrap .others a:nth-of-type(3) {
+  background: #e76caa;
+  box-shadow: 5px 5px 10px rgb(231, 108, 170, 0.5);
+}
+.wrap .others a:nth-of-type(4) {
+  background: #e22be2;
+  box-shadow: 5px 5px 10px rgb(226, 43, 226, 0.5);
+}
